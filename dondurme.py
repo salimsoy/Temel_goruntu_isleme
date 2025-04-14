@@ -8,7 +8,6 @@ center = (w // 2, h // 2)
 angle = 90
 scale = 1.0
 
-
 transform_matrix = cv.getRotationMatrix2D(center, angle, scale)
 
 rotate = cv.warpAffine(img, transform_matrix, (w, h))
